@@ -1,0 +1,65 @@
+<html>
+
+<head></head>
+
+<style>
+
+    * {
+        margin: 0;
+    }
+    .main-bg {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background: url("http://pic1.win4000.com/wallpaper/2019-05-10/5cd4f44a0f750.jpg") no-repeat fixed;
+        z-index: 1;
+    }
+    
+    .main-bg:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background: inherit;
+        filter: blur(8px);
+        z-index: 3;
+    }
+    
+    #remind-msg {
+        font-family: "宋体";
+        position: absolute;
+        left: 50%;
+        top: 65%;
+        transform: translate(-50%, -50%);
+        height: 30px; 
+        line-height: 30px;
+        color: white;
+        font-size: 50px;
+        z-index: 5;
+    }
+    #qr_code {
+        width: auto;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-75%);
+        border-radius: 5px;
+        z-index: 5;
+        
+    }
+    
+</style>
+
+<body>
+    <div class="main-bg">
+        <div id="remind-msg">已上线 欢迎批评指正</div>
+        <image id="qr_code" src="https://github.com/noah227/img_repo/blob/master/qr_code.jpg?raw=true"/>
+    </div>
+</body>
+
+<script></script>
+
+</html>
