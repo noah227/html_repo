@@ -1,7 +1,7 @@
 .main-wrapper {
     width: 60%;
     overflow: hidden;
-    border: yellow 2px solid;
+    /* border: yellow 2px solid; */
 
 }
 
@@ -70,17 +70,17 @@
     display: inline-block;
     width: 20px;
     height: 20px;
-    background: 0 0 url("/static/img/head_icon_default.jpeg") no-repeat;
+    background: 0 0 url("../img/head_icon_default.jpeg") no-repeat;
     background-size: 100% 100%;
 }
 
 .favor {
     width: 48px;
-    background: 0 0 url("/static/img/like-0.png") no-repeat;
+    background: 0 0 url("../img/like-0.png") no-repeat;
     background-size: 100% 100%;
 }
 .comment{
     width: 48px;
-    background:21px 17px url("/static/img/comment.png") no-repeat;
+    background:21px 17px url("../img/comment.png") no-repeat;
     background-size: 32% 32%;
 }

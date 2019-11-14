@@ -38,6 +38,8 @@
 
 .wechat-code {
     position: absolute;
+    width: 128px;
+    height: 128px;
     left: 126px;
     bottom: 96px;
     transition: .6s linear;
