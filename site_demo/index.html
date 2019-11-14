@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="toxicu, toxic, tech, techs">
+    <meta name="description" content="a site to share techs and entertainments' skills">
+
+    <title>Enjoy The Life !</title>
+    <link rel="icon" href="./img/toxic.png">
+    <link rel="stylesheet" type="text/css" href="./css/public.css">
+    <link rel="stylesheet" type="text/css" href="./css/navigator.css">
+    <link rel="stylesheet" type="text/css" href="./css/sign.css">
+    <link rel="stylesheet" href="./css/main_content.css">
+    <link rel="stylesheet" href="./css/foot.css">
+    <style>
+        html {
+            position: relative;
+        {#min-width: 560px;#} min-height: 916px;
+            min-width: 980px;
+        }
+
+        * {
+            margin: 0 auto;
+            padding: 0;
+            font-size: 14px;
+            border: none;
+            outline: none;
+            text-decoration: none;
+        {#border: 1px solid red;#}
+        }
+        a:visited{
+            color: black;
+            text-decoration: none;
+        }
+        #total-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 0 0 url("./img._bg.jpg") no-repeat;
+            z-index: -999;
+        }
+
+        .share_page_to {
+            height: 36px;
+            line-height: 36px;
+            text-align: right;
+            padding-right: 5%;
+        }
+
+        .share_page_to > * {
+            width: 22px;
+            height: 22px;
+            margin-bottom: -5px;
+        }
+
+        .share_page_to > *:hover {
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+<div id="total-bg"></div>
+
+<div class="share_page_to">
+    <img src="./img/weibo.ico" alt="share to blog">
+</div>
+<div id="navigator-wrapper" class="position-origin">
+    <div id="container">
+        <div class="menu-left">
+            <div class="home">
+                <a href="/index" style="border: none;"><img class="home-icon home-icon-origin"
+                                                            src="./img/toxic.png" style=""></a>
+            </div>
+            <div id="menu-access">
+                <a href="">每日新鲜</a>
+                <a href="">技巧分享</a>
+                <a href="">娱乐专区</a>
+            </div>
+        </div>
+        <div class="menu-right">
+            <span class="search-icon"></span>
+            <input class="search-area" type="text" placeholder="搜索">
+        </div>
+
+
+    </div>
+</div>
+
+<div class="main-wrapper">
+    <div class="main-left">
+        {#    {% for i in content_list %}#}
+        <div class="content-wrapper">
+            <div class="content-title">
+                title{{ i.title }}
+            </div>
+            <div class="content-body">
+                <a href="{{ i.source_url }}" target="_blank">
+                    {{ i.content }}
+                    当地时间10月19日，墨西哥秋季联赛第的一场比赛刚开局便出现了状况。在韦拉克鲁斯主场对阵老虎大学之战中，韦拉克鲁斯球员在中场开球后便一动不动以此抗议俱乐部的欠薪行为，并直接送给对方两个进球。
+                </a>
+            </div>
+            <div class="content-info">
+                <div class="content-info-left">
+                    <a class="favor" href="#"></a>
+                    <span>2{{ i.commnet_count }}</span>
+                    <a class="comment" href="#" onclick="comment();"></a>
+                </div>
+                <div class="content-info-right">
+                    <span class="publish-time">时间:2019-2-1{{ i.time }}</span>
+                    <a href="/user/{{ i.uuid }}">
+                        {#  <img src="./img/head_icon_default.jpeg" alt="">#}
+                        <span class="head-icon"></span>
+                        {#  <img src="{{ i.publisher.head_icon }}" alt="">#}
+                        noah{{ i.name }}
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="content-wrapper">
+            <div class="content-title">
+                title{{ i.title }}
+            </div>
+            <div class="content-body">
+                <a href="{{ i.source_url }}" target="_blank">
+                    {{ i.content }}
+                    当地时间10月19日，墨西哥秋季联赛第的一场比赛刚开局便出现了状况。在韦拉克鲁斯主场对阵老虎大学之战中，韦拉克鲁斯球员在中场开球后便一动不动以此抗议俱乐部的欠薪行为，并直接送给对方两个进球。
+                </a>
+            </div>
+            <div class="content-info">
+                <div class="content-info-left">
+                    <a class="favor" href="#"></a>
+                    <span>2{{ i.commnet_count }}</span>
+                    <a class="comment" href="#" onclick="comment();"></a>
+                </div>
+                <div class="content-info-right">
+                    <span class="publish-time">时间:2019-2-1{{ i.time }}</span>
+                    <a href="/user/{{ i.uuid }}">
+                        {#  <img src="./img/head_icon_default.jpeg" alt="">#}
+                        <span class="head-icon"></span>
+                        {#  <img src="{{ i.publisher.head_icon }}" alt="">#}
+                        noah{{ i.name }}
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="content-wrapper">
+            <div class="content-title">
+                title{{ i.title }}
+            </div>
+            <div class="content-body">
+                <a href="{{ i.source_url }}" target="_blank">
+                    {{ i.content }}
+                    当地时间10月19日，墨西哥秋季联赛第的一场比赛刚开局便出现了状况。在韦拉克鲁斯主场对阵老虎大学之战中，韦拉克鲁斯球员在中场开球后便一动不动以此抗议俱乐部的欠薪行为，并直接送给对方两个进球。
+                </a>
+            </div>
+            <div class="content-info">
+                <div class="content-info-left">
+                    <a class="favor" href="#"></a>
+                    <span>2{{ i.commnet_count }}</span>
+                    <a class="comment" href="#" onclick="comment();"></a>
+                </div>
+                <div class="content-info-right">
+                    <span class="publish-time">时间:2019-2-1{{ i.time }}</span>
+                    <a href="/user/{{ i.uuid }}">
+                        {#  <img src="./img/head_icon_default.jpeg" alt="">#}
+                        <span class="head-icon"></span>
+                        {#  <img src="{{ i.publisher.head_icon }}" alt="">#}
+                        noah{{ i.name }}
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="content-wrapper">
+            <div class="content-title">
+                title{{ i.title }}
+            </div>
+            <div class="content-body">
+                <a href="{{ i.source_url }}" target="_blank">
+                    {{ i.content }}
+                    当地时间10月19日，墨西哥秋季联赛第的一场比赛刚开局便出现了状况。在韦拉克鲁斯主场对阵老虎大学之战中，韦拉克鲁斯球员在中场开球后便一动不动以此抗议俱乐部的欠薪行为，并直接送给对方两个进球。
+                </a>
+            </div>
+            <div class="content-info">
+                <div class="content-info-left">
+                    <a class="favor" href="#"></a>
+                    <span>2{{ i.commnet_count }}</span>
+                    <a class="comment" href="#" onclick="comment();"></a>
+                </div>
+                <div class="content-info-right">
+                    <span class="publish-time">时间:2019-2-1{{ i.time }}</span>
+                    <a href="/user/{{ i.uuid }}">
+                        {#  <img src="./img/head_icon_default.jpeg" alt="">#}
+                        <span class="head-icon"></span>
+                        {#  <img src="{{ i.publisher.head_icon }}" alt="">#}
+                        noah{{ i.name }}
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+        {#    {% endfor %}#}
+    </div>
+    <div class="main-right">
+        <img style="" src="./img/side_tmp.jpg" alt="图片失踪了" title="">
+    </div>
+
+</div>
+<div style="width: 100%; background-color: #ecf0f1;">
+    <div class="foot">
+        <div class="foot-left">
+            <div class="favor-us">关注本站</div>
+            <div class="favor-selection" onmouseover="wechat_code();"><a href="" class="wechat" name="wechat"><img
+                    class="small-img" src="./img/wechat.png" alt="">微信</a></div>
+            <img class="wechat-code hide hide-ele" src="./img._code.png" alt="">
+            <div class="favor-selection">
+                <a href="" class="weibo" name="weibo"><img class="small-img" src="./img/weibo.ico" alt="">微博</a>
+            </div>
+            <div class="favor-selection">
+                <a href="mailto:noah227@foxmail.com?subject='feedback'cc={{ i.email }}" class="contact-us" name="email"
+                   onclick="send_email()">
+                    <img class="small-img" src="./img/email.png" alt="">联系我们
+                </a>
+            </div>
+        </div>
+        <div class="foot-right">
+            <div><img src="./img/toxic.png" alt=""></div>
+        </div>
+    </div>
+</div>
+
+<div class="sign-wrapper hide">
+    <div id="sign-select">
+        <div id="select-sign-in">登录</div>
+        <div id="select-sign-up">注册</div>
+    </div>
+    <div id="sign-in">
+        <form action="/sign-in" method="post">
+            <li><input type="text" name="username" placeholder="用户名"></li>
+            <li><input type="password" name="pwd" placeholder="密码"></li>
+            <li>
+                <span id="auto-sign"><input type="checkbox" style="padding-top: 2px;">一个月内自动登录</span>
+                <span id="forget-pwd">忘记密码？</span>
+            </li>
+            <li><input class="submit" type="submit" value="登录"></li>
+        </form>
+    </div>
+    <div id="sign-up" class="hide">
+        <form action="/sign-up">
+            <li><input type="text" name="username" placeholder="用户名"></li>
+            <li><input type="text" name="pwd" placeholder="密码"></li>
+            <li><input type="text" name="valid_code" placeholder="验证码"></li>
+            <li><input class="submit" type="submit" value="注册"></li>
+        </form>
+    </div>
+</div>
+
+
+<script src="jquery-3.3.1.js"></script>
+<script>
+
+    function search_resize(e) {
+        var ele = $(".menu-right");
+        ele.removeClass("hide");
+        var new_width = ele.parent().width() - ele.prev().width() - 60;
+        ele.find(".search-area").css("width", new_width);
+    }
+
+    function size_check(ev) {
+        var current_width = $(window).width();
+        {#var current_height = $(window).height();#}
+        {#var width_right = $(".menu-right");#}
+        {#var width_left = $(".menu-left");#}
+        {#var container_width = $("#container");#}
+        {#var differ = container_width - (width_left + width_right) - 15;#}
+        if (current_width < 560) {
+            window.resizeTo(1800, 600);
+        }
+        if (current_width > 720) {
+            $(".menu-right").removeClass("hide");
+        }
+        if (current_width >= 960) {
+            $(".search-area").css("width", 172);
+        } else {
+            if (current_width > 720) {
+                search_resize()
+            } else {
+                $(".menu-right").addClass("hide")
+            }
+        }
+    }
+
+    function navi_top_check(e) {
+        var val = $(window).scrollTop();
+
+        var current_height = $(window).height();
+        var html_height = $("html").height();
+        console.log(current_height - html_height + 36);
+        if (Math.abs(current_height - html_height + 36) < 60) {
+            return;
+        }
+        if (val >= 36) {
+            $(".home-icon").removeClass("home-icon-origin").addClass("home-icon-resize");
+            $("#navigator-wrapper").removeClass("position-origin").addClass("position-fixed");
+        } else {
+            $(".home-icon").addClass("home-icon-origin").removeClass("home-icon-resize");
+            $("#navigator-wrapper").removeClass("position-fixed").addClass("position-origin");
+        }
+    }
+
+    function comment() {
+
+    }
+    window.onload = function (ev) {
+        console.log($("#container").height());
+        size_check();
+    };
+    window.onresize = function (ev) {
+        size_check();
+        console.log($(window).width(), "---", $(window).height())
+    };
+    window.onscroll = function (ev) {
+        {#console.log($(window).scrollTop());#}
+        {#$("#navigator-wrapper").css("height", "60px");#}
+        navi_top_check();
+    };
+
+    function wechat_code() {
+        var ele = $(".wechat-code");
+        ele.removeClass("hide");
+        $(this).mouseout(function () {
+            $(".wechat-code").addClass("hide");
+        })
+    }
+
+</script>
+
+</body>
+</html>

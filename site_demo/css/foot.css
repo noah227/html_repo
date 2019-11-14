@@ -1,0 +1,58 @@
+.foot {
+    width: 60%;
+    height: 256px;
+}
+
+.foot > * {
+    margin: 36px 0 36px;
+}
+
+.foot a {
+    color: #747b81;;
+}
+
+.foot-left {
+    position: relative;
+    float: left;
+    width: 20%;
+    margin-right: 3%;
+    margin-top: 48px;
+    border-right: 1px solid black;
+}
+
+.foot-left > * {
+    margin-bottom: 15px;
+}
+
+.foot-left img[class="small-img"] {
+    width: 18px;
+    height: 18px;
+    margin-right: 12px;
+}
+
+.favor-selection {
+    height: 18px;
+    line-height: 18px;
+    vertical-align: center;
+}
+
+.wechat-code {
+    position: absolute;
+    left: 126px;
+    bottom: 96px;
+    transition: .6s linear;
+}
+
+.foot-right {
+    float: right;
+    width: 60%;
+    padding-left: 13%;
+    position: relative;
+    margin-right: 3%;
+    margin-top: 48px;
+
+}
+.foot-right img{
+    width: 128px;
+    height: 128px;
+}

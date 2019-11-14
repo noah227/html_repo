@@ -1,0 +1,33 @@
+.position-fixed {
+    height: 80px;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.position-origin {
+    position: relative;
+    /*margin-top: 36px;*/
+    height: 100px;
+
+}
+
+.home-icon-resize {
+    transition: .3s;
+    width: 48px;
+    height: 48px;
+    /*position: fixed;*/
+    /*margin-bottom: -15px;*/
+}
+
+.home-icon-origin {
+    width: 60px;
+    height: 60px;
+}
+
+.search-area-origin{
+    width: 172px;
+    content: 'jjjj';
+}
+
+

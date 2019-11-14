@@ -1,0 +1,82 @@
+#navigator-wrapper {
+    /*position: relative;*/
+    width: 100%;
+    background-color: white;
+    z-index: 999;
+    /*margin-top: 36px;*/
+}
+#navigator-wrapper *{
+    /*opacity: 0.7;*/
+    z-index: 999;
+}
+#container {
+    /*border: 1px solid blue;*/
+    height: 100%;
+    line-height: 100%;
+    width: 60%;
+    margin: 0 20% 0;
+    position: relative;
+
+}
+
+.menu-left {
+    position: absolute;
+    left: 10px;
+    bottom: 5px;
+    line-height: 48px;
+    margin-top: 0;
+    /*border: 2px solid green;*/
+    min-width: 315px;
+}
+
+.menu-left * {
+    float: left;
+    vertical-align: bottom;
+}
+
+#menu-access {
+    position: relative;
+    height: 60px;
+    line-height: 60px;
+    padding-left: 15px;
+}
+
+#menu-access a {
+    float: left;
+    color: orange;
+    text-decoration: none;
+}
+
+#menu-access a:after {
+    content: '|';
+    margin: 0 10px 0;
+}
+
+.menu-right {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    /*border: 2px green solid;*/
+    height: 60px;
+    line-height: 60px;
+    float: right;
+}
+
+.menu-right * {
+    margin-top: 12px;
+    border-style: none;
+    float: right;
+    height: 20px;
+    padding: 5px;
+    background-color: #f5f5f5;
+}
+
+.search-icon {
+    width: 20px;
+    background: 3px 5px #f5f5f5 url("/static/img/searchIcon.ico") no-repeat;
+    background-size: 70% 70%;
+    padding-left: 5px;
+}
+
+
+
